@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="text-4xl text-blue-500 font-semibold text-center bg-slate-400 p-4 shadow-lg italic"
+    >
+      Lifestyle Calculator
+    </header>
+    <main class="container mx-auto mt-5 md:flex">
+      <img
+        class="w-full md:w-1/2 object-cover border-violet-300 rounded-lg border-4"
+        src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1604769825000/photosp/65b0ced5-09f8-4f28-aa56-736d07454d1a/stock-photo-hands-planning-household-working-from-home-taxes-receipt-accounting-expenses-calculate-65b0ced5-09f8-4f28-aa56-736d07454d1a.jpg"
+        alt="image"
+      />
+      <section
+        class="md:ml-5 mt-5 md:mt-0 bg-indigo-50 w-full p-5 text-center space-y-3 rounded-md"
+      >
+        <h1 class="text-2xl font-semibold">INCOME</h1>
+        <div class="flex text-xl font-semibold items-center">
+          <p>Income:</p>
+          <input
+            class="ml-2 outline-none text-xl w-full px-2 py-1 rounded"
+            type="number"
+            placeholder="Please enter your monthly income"
+          />
+        </div>
+        <h1 class="text-2xl font-semibold">EXPENSES</h1>
+        <section class="space-y-3">
+          <div class="flex text-xl font-semibold items-center">
+            <p>Food:</p>
+            <input
+              class="ml-2 outline-none text-xl w-full px-2 py-1 rounded"
+              type="number"
+              placeholder="Please enter your monthly food expense"
+            />
+          </div>
+          <div class="flex text-xl font-semibold items-center">
+            <p>Rent:</p>
+            <input
+              class="ml-2 outline-none text-xl w-full px-2 py-1 rounded"
+              type="number"
+              placeholder="Please enter your monthly rent expense"
+            />
+          </div>
+          <div class="flex text-xl font-semibold items-center">
+            <p>Clothes:</p>
+            <input
+              class="ml-2 outline-none text-xl w-full px-2 py-1 rounded"
+              type="number"
+              placeholder="Please enter your monthly clothes expense"
+            />
+          </div>
+          <button class="bg-pink-500 font-bold text-white px-6 py-3 rounded-lg">Calculate</button>
+          <h2 class="text-2xl font-bold" >Total Expenses: <span>00</span> Taka</h2>
+          <h2 class="text-2xl font-bold" >Balance: <span>00</span> Taka</h2>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
